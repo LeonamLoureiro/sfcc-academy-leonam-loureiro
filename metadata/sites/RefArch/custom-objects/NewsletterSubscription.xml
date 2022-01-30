@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<custom-objects xmlns="http://www.demandware.com/xml/impex/customobject/2006-10-31">
+    <custom-object type-id="NewsletterSubscription" object-id="billgates@microsoft.com">
+        <object-attribute attribute-id="firstName">Bill</object-attribute>
+        <object-attribute attribute-id="lastName">Gates</object-attribute>
+    </custom-object>
+
+    <custom-object type-id="NewsletterSubscription" object-id="paulmccartney@gmail.com">
+        <object-attribute attribute-id="firstName">Paul</object-attribute>
+        <object-attribute attribute-id="lastName">McCartney</object-attribute>
+    </custom-object>
+
+    <custom-object type-id="NewsletterSubscription" object-id="mickjagger@gmail.com">
+        <object-attribute attribute-id="firstName">Mick</object-attribute>
+        <object-attribute attribute-id="lastName">Jagger</object-attribute>
+    </custom-object>
+
+    <custom-object type-id="NewsletterSubscription" object-id="leonamloureiro1@gmail.com">
+        <object-attribute attribute-id="firstName">Leonam</object-attribute>
+        <object-attribute attribute-id="lastName">Loureiro</object-attribute>
+    </custom-object>
+
+    <custom-object type-id="NewsletterSubscription" object-id="zesilva@gmail.com">
+        <object-attribute attribute-id="firstName">Zé</object-attribute>
+        <object-attribute attribute-id="lastName">Silva</object-attribute>
+    </custom-object>
+
+    <custom-object type-id="NewsletterSubscription" object-id="[object Object]"/>
+
+    <custom-object type-id="NewsletterSubscription" object-id="eltonjohn2888@hotmail.com">
+        <object-attribute attribute-id="firstName">Elton</object-attribute>
+        <object-attribute attribute-id="lastName">John</object-attribute>
+    </custom-object>
+
+</custom-objects>

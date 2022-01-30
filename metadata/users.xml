@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users xmlns="http://www.demandware.com/xml/impex/user/2007-09-05">
+    <user login="leonamloureiro1@gmail.com" enabled-flag="true">
+        <credentials>
+            <external-id>ee5fbebf-d9a5-44d5-8c89-0a7574620735</external-id>
+        </credentials>
+        <profile>
+            <first-name>Leonam</first-name>
+            <last-name>Loureiro</last-name>
+            <email>leonamloureiro1@gmail.com</email>
+        </profile>
+    </user>
+
+    <user login="gorkem.akdur@osf.digital" enabled-flag="true">
+        <credentials>
+            <external-id>be2ba49d-2113-4085-a4c2-2797fa1eeb5f</external-id>
+        </credentials>
+        <profile>
+            <first-name>Gorkem</first-name>
+            <last-name>Akdur</last-name>
+            <email>gorkem.akdur@osf.digital</email>
+            <preferred-data-locale>none</preferred-data-locale>
+        </profile>
+    </user>
+
+</users>
