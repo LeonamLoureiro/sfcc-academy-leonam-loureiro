@@ -17,9 +17,17 @@ $(document).ready(function () {
 require('./thirdParty/bootstrap');
 require('./components/spinner');
 
-document.addEventListener("click", ()=>{
 
-    var hide = document.querySelector('#hide');
-    hide.style.display = "none";
-        
-})
+
+var hide = document.querySelector('#hide');
+var show = document.querySelector('#promo');
+hide.addEventListener('click', function() {
+    
+    hide.style.display = 'none';
+    show.style.display = 'block';
+
+ 
+});
+
+
+
