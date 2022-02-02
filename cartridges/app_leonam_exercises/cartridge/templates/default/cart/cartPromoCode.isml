@@ -3,10 +3,10 @@
         <p class="optional-promo">${Resource.msg('action.enter.promo.code','cart',null)}</p>
     </div>
 </div>
-<div class="row" id="hide">
+<div class="row" id="labelpromocode">
     <a href="#form" >${Resource.msg('label.click.promo.code','cart',null)} </a>
 </div>
-<div class="row" id="promo">
+<div class="row" id="fieldpromocode">
     <div class="col-12">
         <form action="${pdict.actionUrls.submitCouponCodeUrl}" class="promo-code-form" id="form" method="GET" name="promo-code-form">
             <div class="form-group">
