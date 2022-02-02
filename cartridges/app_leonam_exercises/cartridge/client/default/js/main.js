@@ -18,16 +18,11 @@ require('./thirdParty/bootstrap');
 require('./components/spinner');
 
 
+require('hide-show');
 
-var hide = document.querySelector('#hide');
-var show = document.querySelector('#promo');
-hide.addEventListener('click', function() {
-    
-    hide.style.display = 'none';
-    show.style.display = 'block';
 
  
-});
+
 
 
 
