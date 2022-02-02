@@ -11,6 +11,7 @@
     <iscomment> Include content asset </iscomment>
     <iscontentasset aid="academy-exercise-3"/>
 
+    <iscomment>
     <!-- +1.888.555.0199 --><!--This phone is a requirement to support existing Gomez monitor of SiteGenesis. Demadware customers can remove this.-->
     <div class="home-main homepage">
         <isslot id="home-main-m" description="Main home page slot." context="global" />
@@ -31,6 +32,7 @@
     <div class="homepage shop-the-style">
         <isslot id="home-product-set-m" description="Link to a Product Set." context="global" />
     </div>
+    </iscomment>
     <div class="home-email-signup">
         <div class="container">
             <form role="form">
