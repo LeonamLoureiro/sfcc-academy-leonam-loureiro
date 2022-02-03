@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<form xmlns="http://www.demandware.com/xml/form/2008-04-19" secure="false">
+	<group formid="shipping">
+		<field 
+			formid="firstname" 
+			label="label.input.firstname.profile" 
+			mandatory="true" 
+			max-length="50"
+			missing-error="error.message.required" 
+			range-error="error.message.50orless" 
+			type="string" />
+
+		<field 
+			formid="lastname" 
+			label="label.input.lastname.profile" 
+			mandatory="true" 
+			max-length="50" 
+			missing-error="error.message.required"
+			range-error="error.message.50orless" 
+			type="string" />
+
+		<field
+			formid="email" 
+			label="label.input.email.profile" 
+			mandatory="true" 
+			max-length="50" 
+			missing-error="error.message.required"
+			parse-error="error.message.parse.email.profile.form"
+			range-error="error.message.50orless"
+			regexp="^[\w.%+-]+@[\w.-]+\.[\w]{2,6}$" 
+			value-error="ValueErrorText"
+			type="string"/> 
+			
+		
+
+		<field
+			formid="country" 
+			label="label.input.country.training" 
+			mandatory="true" 
+			max-length="50" 
+			missing-error="error.message.required"
+			parse-error="error.message.parse.country"
+			range-error="error.message.50orless"
+			value-error="ValueErrorText"
+			type="string"/> 
+
+		<field
+			formid="shipping" 
+			label="label.input.shipping.training" 
+			mandatory="true" 
+			max-length="50" 
+			missing-error="error.message.required"
+			range-error="error.message.50orless"
+			value-error="ValueErrorText"
+			type="string"/> 
+
+	</group>
+
+		
+	
+</form>
