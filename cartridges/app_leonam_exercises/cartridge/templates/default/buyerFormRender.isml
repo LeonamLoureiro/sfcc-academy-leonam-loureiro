@@ -23,12 +23,21 @@
             <div class="invalid-feedback" id="form-lname-error"></div>
         </div>
 
-        <div class="form-group">
-            <label class=" form-control-label" for="email">
-                <isprint value="${pdict.shippingForm.shipping.email.label}" encoding="htmlcontent" />
+        <div class="form-group
+        <isif condition=" ${!!pdict.shippingForm.shipping.address1.mandatory === true}">required</isif>">
+            <label class="form-control-label" for="address1">
+                <isprint value="${pdict.shippingForm.shipping.address1.label}" encoding="htmlcontent" />
             </label>
-            <input type="text" class="form-control" id="email" <isprint
-                value=${pdict.shippingForm.shipping.email.attributes} encoding="off" />>
+            <input type="text" class="form-control" id="address1" <isprint
+                value=${pdict.shippingForm.shipping.address1.attributes} encoding="off" />>
+        </div>
+
+        <div class="form-group">
+            <label class="form-control-label" for="address2">
+                <isprint value="${pdict.shippingForm.shipping.address2.label}" encoding="htmlcontent" />
+            </label>
+            <input type="text" class="form-control" id="address2" <isprint
+                value=${pdict.shippingForm.shipping.address2.attributes} encoding="off" />>
         </div>
 
         <div class="form-group
@@ -41,18 +50,98 @@
         </div>
 
         <div class="form-group
-        <isif condition=" ${!!pdict.shippingForm.shipping.shipping.mandatory === true}">required</isif>">
-            <label class="form-control-label" for="shipping">
-                <isprint value="${pdict.shippingForm.shipping.shipping.label}" encoding="htmlcontent" />
+        <isif condition=" ${!!pdict.shippingForm.shipping.state.mandatory === true}">required</isif>">
+            <label class="form-control-label" for="state">
+                <isprint value="${pdict.shippingForm.shipping.state.label}" encoding="htmlcontent" />
             </label>
-            <input type="text" class="form-control" id="shipping" <isprint
-                value=${pdict.shippingForm.shipping.shipping.attributes} encoding="off" />>
+            <input type="text" class="form-control" id="state" <isprint
+                value=${pdict.shippingForm.shipping.state.attributes} encoding="off" />>
         </div>
+
+        <div class="form-group
+        <isif condition=" ${!!pdict.shippingForm.shipping.postalcode.mandatory === true}">required</isif>">
+            <label class="form-control-label" for="postalcode">
+                <isprint value="${pdict.shippingForm.shipping.postalcode.label}" encoding="htmlcontent" />
+            </label>
+            <input type="text" class="form-control" id="postalcode" <isprint
+                value=${pdict.shippingForm.shipping.postalcode.attributes} encoding="off" />>
+        </div>
+
+        <div class="form-group
+        <isif condition=" ${!!pdict.shippingForm.shipping.phonenumber.mandatory === true}">required</isif>">
+            <label class="form-control-label" for="phonenumber">
+                <isprint value="${pdict.shippingForm.shipping.phonenumber.label}" encoding="htmlcontent" />
+            </label>
+            <input type="text" class="form-control" id="phonenumber" <isprint
+                value=${pdict.shippingForm.shipping.phonenumber.attributes} encoding="off" />>
+        </div>
+
+        <div class="form-group
+        <isif condition=" ${!!pdict.shippingForm.shipping.comments.mandatory === true}">required</isif>">
+            <label class="form-control-label" for="comments">
+                <isprint value="${pdict.shippingForm.shipping.comments.label}" encoding="htmlcontent" />
+            </label>
+            <input type="text" class="form-control" id="comments" <isprint
+                value=${pdict.shippingForm.shipping.comments.attributes} encoding="off" />>
+        </div>
+
+    <h1>
+        <isprint value="${pdict.title}" encoding="htmlcontent" />
+    </h1>
+
+        <div class="form-group
+        <isif condition=" ${!!pdict.shippingForm.payment.cardnumber.mandatory === true}">required</isif>">
+            <label class="form-control-label" for="cardnumber">
+                <isprint value="${pdict.shippingForm.payment.cardnumber.label}" encoding="htmlcontent" />
+            </label>
+            <input type="text" class="form-control" id="cardnumber" <isprint
+                value=${pdict.shippingForm.payment.cardnumber.attributes} encoding="off" />>
+        </div>
+
+        <div class="form-group
+        <isif condition=" ${!!pdict.shippingForm.payment.expirationmonth.mandatory === true}">required</isif>">
+            <label class="form-control-label" for="expirationmonth">
+                <isprint value="${pdict.shippingForm.payment.expirationmonth.label}" encoding="htmlcontent" />
+            </label>
+            <input type="text" class="form-control" id="expirationmonth" <isprint
+                value=${pdict.shippingForm.payment.expirationmonth.attributes} encoding="off" />>
+        </div>
+
+        <div class="form-group
+        <isif condition=" ${!!pdict.shippingForm.payment.expirationyear.mandatory === true}">required</isif>">
+            <label class="form-control-label" for="expirationyear">
+                <isprint value="${pdict.shippingForm.payment.expirationyear.label}" encoding="htmlcontent" />
+            </label>
+            <input type="text" class="form-control" id="expirationyear" <isprint
+                value=${pdict.shippingForm.payment.expirationyear.attributes} encoding="off" />>
+        </div>
+
+        <div class="form-group
+        <isif condition=" ${!!pdict.shippingForm.payment.securitycode.mandatory === true}">required</isif>">
+            <label class="form-control-label" for="securitycode">
+                <isprint value="${pdict.shippingForm.payment.securitycode.label}" encoding="htmlcontent" />
+            </label>
+            <input type="text" class="form-control" id="securitycode" <isprint
+                value=${pdict.shippingForm.payment.securitycode.attributes} encoding="off" />>
+        </div>
+
+
+        <div class="form-group 
+        <isif condition=" ${!!pdict.shippingForm.payment.securitycode.mandatory === true}">required</isif>">
+            <label class=" form-control-label" for="email">
+                <isprint value="${pdict.shippingForm.payment.email.label}" encoding="htmlcontent" />
+            </label>
+            <input type="text" class="form-control" id="email" <isprint
+                value=${pdict.shippingForm.payment.email.attributes} encoding="off" />>
+        </div>
+
+        
+
 
         <input type="hidden" name="${pdict.csrf.tokenName}" value="${pdict.csrf.token}" />
 
         <button type="submit" class="btn btn-block btn-primary">
-            ${Resource.msg('button.senddata.profile', 'forms', null)}
+            ${Resource.msg('label.button.save', 'forms', null)}
         </button>
     </form>
 </isdecorate>
