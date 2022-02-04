@@ -3,7 +3,6 @@
 var server = require('server');
 
 var csrfProtection = require('*/cartridge/scripts/middleware/csrf');
-var userLoggedIn = require('*/cartridge/scripts/middleware/userLoggedIn');
 var consentTracking = require('*/cartridge/scripts/middleware/consentTracking');
 
 server.get(
@@ -15,11 +14,11 @@ server.get(
         var Resource = require('dw/web/Resource');
         var URLUtils = require('dw/web/URLUtils');
 
-        var trainingForm = server.forms.getForm('form');
-        trainingForm.clear();
-            res.render('templates/buyerFormRender', {
-            title: Resource.msg("training.form.title.show", "forms", null),
-            trainingForm: trainingForm,
+        var shippingForm = server.forms.getForm('form');
+        shippingForm.clear();
+            res.render('buyerFormRender', {
+            title: Resource.msg("label.form.title.shipping", "forms", null),
+            shippingForm: shippingForm,
             actionUrl: URLUtils.url("buyerForm-SubmitInformation").toString()
         });
         next();
