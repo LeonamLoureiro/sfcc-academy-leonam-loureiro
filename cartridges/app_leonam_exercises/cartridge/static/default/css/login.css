@@ -1,0 +1,72 @@
+.form-group.required .form-control-label::before {
+  content: "*";
+  color: #c00;
+}
+
+.form-division-1, .form-division-2 {
+  max-width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 47.5% 47.5%;
+  grid-column-gap: 5%;
+}
+
+.full-width-grid {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.form-title-division {
+  background-color: white;
+  text-align: center;
+  width: 100%;
+  padding: 0.5rem 0.5rem;
+}
+
+.btn-primary {
+  text-align: center;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.login-page {
+  margin-top: 1em;
+}
+.login-page .login-form-nav {
+  margin-bottom: 1.25em;
+}
+.login-page .login-form-nav .tab-pane {
+  margin-top: 1em;
+}
+.login-page .login {
+  margin-bottom: 0.938em;
+}
+.login-page .login .error-message-form {
+  padding: 0.625em;
+  background-color: #c00;
+  color: #fff;
+  border-radius: 0.188em;
+}
+
+.registration-page .privacy-policy {
+  margin-top: 1rem;
+}
+
+.login-banner {
+  background-image: url("../images/account.jpg");
+  background-position-y: 40%;
+}
+
+.equal-height .card {
+  width: 100%;
+}
+
+.track-order-header {
+  font-size: 1.75rem;
+}
+
+.request-password-title {
+  font-size: 1.5rem;
+}
+
+/*# sourceMappingURL=login.css.map*/

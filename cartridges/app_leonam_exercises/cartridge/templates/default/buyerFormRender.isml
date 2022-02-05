@@ -1,10 +1,10 @@
 <isdecorate template="common/layout/page">
-    <h1>
+<h1 class=form-title-division>
         <isprint value="${pdict.title}" encoding="htmlcontent" />
-    </h1>
-    <form action="${URLUtils.url('buyerForm-SubmitInformation')}" class="edit-profile-form" method="POST" name="${pdict.shippingForm.htmlName}">
+</h1>
+    <form action="${URLUtils.url('buyerForm-SubmitInformation')}" class="edit-shipping-form" method="POST" name="${pdict.shippingForm.htmlName}">
         
-        <fieldset> 
+        <fieldset class=form-division-1> 
             <div class="form-group
             <isif condition=" ${!!pdict.shippingForm.shipping.firstname.mandatory === true}">required</isif>">
                 <label class="form-control-label" for="firstname">
@@ -26,7 +26,7 @@
             </div>
 
             <div class="form-group
-            <isif condition=" ${!!pdict.shippingForm.shipping.address1.mandatory === true}">required</isif>">
+            <isif condition=" ${!!pdict.shippingForm.shipping.address1.mandatory === true}">required</isif> full-width-grid">
                 <label class="form-control-label" for="address1">
                     <isprint value="${pdict.shippingForm.shipping.address1.label}" encoding="htmlcontent" />
                 </label>
@@ -34,7 +34,7 @@
                     value=${pdict.shippingForm.shipping.address1.attributes} encoding="off" />>
             </div>
 
-            <div class="form-group">
+            <div class="form-group full-width-grid">
                 <label class="form-control-label" for="address2">
                     <isprint value="${pdict.shippingForm.shipping.address2.label}" encoding="htmlcontent" />
                 </label>
@@ -256,20 +256,21 @@
                 ${Resource.msg('example.phone', 'forms', null)}
             </div>
 
-            <div class="form-group">
+            <div class="form-group full-width-grid">
                 <label class="form-control-label" for="comments">
                     <isprint value="${pdict.shippingForm.shipping.comments.label}" encoding="htmlcontent" />
                 </label>
                 <textarea class="form-control" id="comments" <isprint
                     value=${pdict.shippingForm.shipping.comments.attributes} encoding="off"/>></textarea>
+                ${Resource.msgf('label.form.characters.remaining150', 'forms', null, charactersRemaining)}
             </div>
         </fieldset>
-    <h1>
-        <isprint value="${pdict.title}" encoding="htmlcontent" />
-    </h1>
-        <fieldset>
+<h1 class="form-title-division">
+    ${Resource.msg('label.form.title.payment', 'forms', null)}
+</h1>
+        <fieldset class=form-division-2>
             <div class="form-group
-            <isif condition=" ${!!pdict.shippingForm.payment.cardnumber.mandatory === true}">required</isif>">
+            <isif condition=" ${!!pdict.shippingForm.payment.cardnumber.mandatory === true}">required</isif> full-width-grid">
                 <label class="form-control-label" for="cardnumber">
                     <isprint value="${pdict.shippingForm.payment.cardnumber.label}" encoding="htmlcontent" />
                 </label>
