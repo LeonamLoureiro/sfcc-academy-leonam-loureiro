@@ -3,139 +3,350 @@
         <isprint value="${pdict.title}" encoding="htmlcontent" />
     </h1>
     <form action="${URLUtils.url('buyerForm-SubmitInformation')}" class="edit-profile-form" method="POST" name="${pdict.shippingForm.htmlName}">
-        <div class="form-group
-        <isif condition=" ${!!pdict.shippingForm.shipping.firstname.mandatory === true}">required</isif>">
-            <label class="form-control-label" for="firstname">
-                <isprint value="${pdict.shippingForm.shipping.firstname.label}" encoding="htmlcontent" />
-            </label>
-            <input type="text" class="form-control" id="firstname" <isprint
-                value=${pdict.shippingForm.shipping.firstname.attributes} encoding="off" />>
-            <div class="invalid-feedback" id="form-fname-error"></div>
-        </div>
+        
+        <fieldset> 
+            <div class="form-group
+            <isif condition=" ${!!pdict.shippingForm.shipping.firstname.mandatory === true}">required</isif>">
+                <label class="form-control-label" for="firstname">
+                    <isprint value="${pdict.shippingForm.shipping.firstname.label}" encoding="htmlcontent" />
+                </label>
+                <input type="text" class="form-control" id="firstname" <isprint
+                    value=${pdict.shippingForm.shipping.firstname.attributes} encoding="off" />>
+                <div class="invalid-feedback" id="form-fname-error"></div>
+            </div>
 
-        <div class="form-group
-        <isif condition=" ${!!pdict.shippingForm.shipping.lastname.mandatory === true}">required</isif>">
-            <label class="form-control-label" for="lastname">
-                <isprint value="${pdict.shippingForm.shipping.lastname.label}" encoding="htmlcontent" />
-            </label>
-            <input type="text" class="form-control" id="lastname" <isprint
-                value=${pdict.shippingForm.shipping.lastname.attributes} encoding="off" />>
-            <div class="invalid-feedback" id="form-lname-error"></div>
-        </div>
+            <div class="form-group
+            <isif condition=" ${!!pdict.shippingForm.shipping.lastname.mandatory === true}">required</isif>">
+                <label class="form-control-label" for="lastname">
+                    <isprint value="${pdict.shippingForm.shipping.lastname.label}" encoding="htmlcontent" />
+                </label>
+                <input type="text" class="form-control" id="lastname" <isprint
+                    value=${pdict.shippingForm.shipping.lastname.attributes} encoding="off" />>
+                <div class="invalid-feedback" id="form-lname-error"></div>
+            </div>
 
-        <div class="form-group
-        <isif condition=" ${!!pdict.shippingForm.shipping.address1.mandatory === true}">required</isif>">
-            <label class="form-control-label" for="address1">
-                <isprint value="${pdict.shippingForm.shipping.address1.label}" encoding="htmlcontent" />
-            </label>
-            <input type="text" class="form-control" id="address1" <isprint
-                value=${pdict.shippingForm.shipping.address1.attributes} encoding="off" />>
-        </div>
+            <div class="form-group
+            <isif condition=" ${!!pdict.shippingForm.shipping.address1.mandatory === true}">required</isif>">
+                <label class="form-control-label" for="address1">
+                    <isprint value="${pdict.shippingForm.shipping.address1.label}" encoding="htmlcontent" />
+                </label>
+                <input type="text" class="form-control" id="address1" <isprint
+                    value=${pdict.shippingForm.shipping.address1.attributes} encoding="off" />>
+            </div>
 
-        <div class="form-group">
-            <label class="form-control-label" for="address2">
-                <isprint value="${pdict.shippingForm.shipping.address2.label}" encoding="htmlcontent" />
-            </label>
-            <input type="text" class="form-control" id="address2" <isprint
-                value=${pdict.shippingForm.shipping.address2.attributes} encoding="off" />>
-        </div>
+            <div class="form-group">
+                <label class="form-control-label" for="address2">
+                    <isprint value="${pdict.shippingForm.shipping.address2.label}" encoding="htmlcontent" />
+                </label>
+                <input type="text" class="form-control" id="address2" <isprint
+                    value=${pdict.shippingForm.shipping.address2.attributes} encoding="off" />>
+            </div>
 
-        <div class="form-group
-        <isif condition=" ${!!pdict.shippingForm.shipping.country.mandatory === true}">required</isif>">
-            <label class="form-control-label" for="country">
-                <isprint value="${pdict.shippingForm.shipping.country.label}" encoding="htmlcontent" />
-            </label>
-            <input type="text" class="form-control" id="country" <isprint
-                value=${pdict.shippingForm.shipping.country.attributes} encoding="off" />>
-        </div>
+            <div class="form-group
+            <isif condition=" ${!!pdict.shippingForm.shipping.country.mandatory === true}">required</isif>">
+                <label class="form-control-label" for="country">
+                    <isprint value="${pdict.shippingForm.shipping.country.label}" encoding="htmlcontent" />
+                </label>
+                <select class="form-control" id="country" <isprint
+                    value=${pdict.shippingForm.shipping.country.attributes} encoding="off" />>
+                    <option> 
+                        ${Resource.msg('select.option.country.unitedstates', 'forms', null)}
+                    </option>
+                
+                </select>    
+            </div>
 
-        <div class="form-group
-        <isif condition=" ${!!pdict.shippingForm.shipping.state.mandatory === true}">required</isif>">
-            <label class="form-control-label" for="state">
-                <isprint value="${pdict.shippingForm.shipping.state.label}" encoding="htmlcontent" />
-            </label>
-            <input type="text" class="form-control" id="state" <isprint
-                value=${pdict.shippingForm.shipping.state.attributes} encoding="off" />>
-        </div>
+            
+            <div class="form-group
+            <isif condition=" ${!!pdict.shippingForm.shipping.state.mandatory === true}">required</isif>">
+                <label class="form-control-label" for="state">
+                    <isprint value="${pdict.shippingForm.shipping.state.label}" encoding="htmlcontent" />
+                </label>
+                <select class="form-control" id="state" <isprint
+                    value=${pdict.shippingForm.shipping.state.attributes} encoding="off" />>
+                    <option> 
+                        ${Resource.msg('state.us.alabama', 'forms', null)}
+                    </option>
+                    <option> 
+                        ${Resource.msg('state.us.alaska', 'forms', null)}
+                    </option>
+                    <option> 
+                        ${Resource.msg('state.us.americansamoa', 'forms', null)}
+                    </option>
+                    <option> 
+                        ${Resource.msg('state.us.arizona', 'forms', null)}
+                    </option>
+                    <option> 
+                        ${Resource.msg('state.us.arkansas', 'forms', null)}
+                    </option>
+                    <option> 
+                        ${Resource.msg('state.us.california', 'forms', null)}
+                    </option>
+                    <option> 
+                        ${Resource.msg('state.us.colorado', 'forms', null)}
+                    </option>
+                    <option> 
+                        ${Resource.msg('state.us.connecticut', 'forms', null)}
+                    </option>
+                    <option> 
+                        ${Resource.msg('state.us.delaware', 'forms', null)}
+                    </option>
+                    <option> 
+                        ${Resource.msg('state.us.dc', 'forms', null)}
+                    </option>
+                    <option> 
+                        ${Resource.msg('state.us.florida', 'forms', null)}
+                    </option>
+                    <option> 
+                        ${Resource.msg('state.us.georgia', 'forms', null)}
+                    </option>
+                    <option> 
+                        ${Resource.msg('state.us.guam', 'forms', null)}
+                    </option>
+                    <option> 
+                        ${Resource.msg('state.us.hawaii', 'forms', null)}
+                    </option>
+                    <option> 
+                        ${Resource.msg('state.us.idaho', 'forms', null)}
+                    </option>
+                    <option> 
+                        ${Resource.msg('state.us.illinois', 'forms', null)}
+                    </option>
+                    <option> 
+                        ${Resource.msg('state.us.indiana', 'forms', null)}
+                    </option>
+                    <option> 
+                        ${Resource.msg('state.us.iowa', 'forms', null)}
+                    </option>
+                    <option> 
+                        ${Resource.msg('state.us.kansas', 'forms', null)}
+                    </option>
+                    <option> 
+                        ${Resource.msg('state.us.kentucky', 'forms', null)}
+                    </option>
+                    <option> 
+                        ${Resource.msg('state.us.louisiana', 'forms', null)}
+                    </option>
+                    <option> 
+                        ${Resource.msg('state.us.maine', 'forms', null)}
+                    </option>
+                    <option> 
+                        ${Resource.msg('state.us.maryland', 'forms', null)}
+                    </option>
+                    <option> 
+                        ${Resource.msg('state.us.massachusetts', 'forms', null)}
+                    </option>
+                    <option> 
+                        ${Resource.msg('state.us.michigan', 'forms', null)}
+                    </option>
+                    <option> 
+                        ${Resource.msg('state.us.minnesota', 'forms', null)}
+                    </option>
+                    <option> 
+                        ${Resource.msg('state.us.mississippi', 'forms', null)}
+                    </option>
+                    <option> 
+                        ${Resource.msg('state.us.missouri', 'forms', null)}
+                    </option>
+                    <option> 
+                        ${Resource.msg('state.us.montana', 'forms', null)}
+                    </option>
+                    <option> 
+                        ${Resource.msg('state.us.nebraska', 'forms', null)}
+                    </option>
+                    <option> 
+                        ${Resource.msg('state.us.nevada', 'forms', null)}
+                    </option>
+                    <option> 
+                        ${Resource.msg('state.us.newhampshire', 'forms', null)}
+                    </option>
+                    <option> 
+                        ${Resource.msg('state.us.newjersey', 'forms', null)}
+                    </option>
+                    <option> 
+                        ${Resource.msg('state.us.newmexico', 'forms', null)}
+                    </option>
+                    <option> 
+                        ${Resource.msg('state.us.newyork', 'forms', null)}
+                    </option>
+                    <option> 
+                        ${Resource.msg('state.us.northcarolina', 'forms', null)}
+                    </option>
+                    <option> 
+                        ${Resource.msg('state.us.northdakota', 'forms', null)}
+                    </option>
+                    <option> 
+                        ${Resource.msg('state.us.ohio', 'forms', null)}
+                    </option>
+                    <option> 
+                        ${Resource.msg('state.us.oklahoma', 'forms', null)}
+                    </option>
+                    <option> 
+                        ${Resource.msg('state.us.oregon', 'forms', null)}
+                    </option>
+                    <option> 
+                        ${Resource.msg('state.us.pennsylvania', 'forms', null)}
+                    </option>
+                    <option> 
+                        ${Resource.msg('state.us.puertorico', 'forms', null)}
+                    </option>
+                    <option> 
+                        ${Resource.msg('state.us.rhodeisland', 'forms', null)}
+                    </option>
+                    <option> 
+                        ${Resource.msg('state.us.indiana', 'forms', null)}
+                    </option>
+                    <option> 
+                        ${Resource.msg('state.us.southcarolina', 'forms', null)}
+                    </option>
+                    <option> 
+                        ${Resource.msg('state.us.southdakota', 'forms', null)}
+                    </option>
+                    <option> 
+                        ${Resource.msg('state.us.tennessee', 'forms', null)}
+                    </option>
+                    <option> 
+                        ${Resource.msg('state.us.texas', 'forms', null)}
+                    </option>
+                    <option> 
+                        ${Resource.msg('state.us.utah', 'forms', null)}
+                    </option>
+                    <option> 
+                        ${Resource.msg('state.us.vermont', 'forms', null)}
+                    </option>
+                    <option> 
+                        ${Resource.msg('state.us.virginislands', 'forms', null)}
+                    </option>
+                    <option> 
+                        ${Resource.msg('state.us.virginia', 'forms', null)}
+                    </option>
+                    <option> 
+                        ${Resource.msg('state.us.washington', 'forms', null)}
+                    </option>
+                    <option> 
+                        ${Resource.msg('state.us.westvirginia', 'forms', null)}
+                    </option>
+                    <option> 
+                        ${Resource.msg('state.us.wisconsin', 'forms', null)}
+                    </option>
+                    <option> 
+                        ${Resource.msg('state.us.wyoming', 'forms', null)}
+                    </option>
 
-        <div class="form-group
-        <isif condition=" ${!!pdict.shippingForm.shipping.postalcode.mandatory === true}">required</isif>">
-            <label class="form-control-label" for="postalcode">
-                <isprint value="${pdict.shippingForm.shipping.postalcode.label}" encoding="htmlcontent" />
-            </label>
-            <input type="text" class="form-control" id="postalcode" <isprint
-                value=${pdict.shippingForm.shipping.postalcode.attributes} encoding="off" />>
-        </div>
+                </select>    
+            </div>
 
-        <div class="form-group
-        <isif condition=" ${!!pdict.shippingForm.shipping.phonenumber.mandatory === true}">required</isif>">
-            <label class="form-control-label" for="phonenumber">
-                <isprint value="${pdict.shippingForm.shipping.phonenumber.label}" encoding="htmlcontent" />
-            </label>
-            <input type="text" class="form-control" id="phonenumber" <isprint
-                value=${pdict.shippingForm.shipping.phonenumber.attributes} encoding="off" />>
-        </div>
+            <div class="form-group
+            <isif condition=" ${!!pdict.shippingForm.shipping.postalcode.mandatory === true}">required</isif>">
+                <label class="form-control-label" for="postalcode">
+                    <isprint value="${pdict.shippingForm.shipping.postalcode.label}" encoding="htmlcontent" />
+                </label>
+                <input type="text" class="form-control" id="postalcode"  <isprint
+                    value=${pdict.shippingForm.shipping.postalcode.attributes} encoding="off"  />>
+                ${Resource.msg('example.postalcode', 'forms', null)}
+            </div>
 
-        <div class="form-group
-        <isif condition=" ${!!pdict.shippingForm.shipping.comments.mandatory === true}">required</isif>">
-            <label class="form-control-label" for="comments">
-                <isprint value="${pdict.shippingForm.shipping.comments.label}" encoding="htmlcontent" />
-            </label>
-            <input type="text" class="form-control" id="comments" <isprint
-                value=${pdict.shippingForm.shipping.comments.attributes} encoding="off" />>
-        </div>
+            <div class="form-group
+            <isif condition=" ${!!pdict.shippingForm.shipping.phonenumber.mandatory === true}">required</isif>">
+                <label class="form-control-label" for="phonenumber">
+                    <isprint value="${pdict.shippingForm.shipping.phonenumber.label}" encoding="htmlcontent" />
+                </label>
+                <input type="tel" class="form-control" id="phonenumber" <isprint
+                    value=${pdict.shippingForm.shipping.phonenumber.attributes} encoding="off" />>
+                ${Resource.msg('example.phone', 'forms', null)}
+            </div>
 
+            <div class="form-group">
+                <label class="form-control-label" for="comments">
+                    <isprint value="${pdict.shippingForm.shipping.comments.label}" encoding="htmlcontent" />
+                </label>
+                <textarea class="form-control" id="comments" <isprint
+                    value=${pdict.shippingForm.shipping.comments.attributes} encoding="off"/>></textarea>
+            </div>
+        </fieldset>
     <h1>
         <isprint value="${pdict.title}" encoding="htmlcontent" />
     </h1>
+        <fieldset>
+            <div class="form-group
+            <isif condition=" ${!!pdict.shippingForm.payment.cardnumber.mandatory === true}">required</isif>">
+                <label class="form-control-label" for="cardnumber">
+                    <isprint value="${pdict.shippingForm.payment.cardnumber.label}" encoding="htmlcontent" />
+                </label>
+                <input type="text" class="form-control" id="cardnumber" <isprint
+                    value=${pdict.shippingForm.payment.cardnumber.attributes} encoding="off" />>
+            </div>
 
-        <div class="form-group
-        <isif condition=" ${!!pdict.shippingForm.payment.cardnumber.mandatory === true}">required</isif>">
-            <label class="form-control-label" for="cardnumber">
-                <isprint value="${pdict.shippingForm.payment.cardnumber.label}" encoding="htmlcontent" />
+            <div class="form-group
+            <isif condition=" ${!!pdict.shippingForm.payment.expirationmonth.mandatory === true}">required</isif>">
+                <label class="form-control-label" for="expirationmonth">
+                    <isprint value="${pdict.shippingForm.payment.expirationmonth.label}" encoding="htmlcontent" />
+                </label>
+                <select class="form-control" id="expirationmonth" <isprint
+                    value=${pdict.shippingForm.payment.expirationmonth.attributes} encoding="off" />>
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+                <option>04</option>
+                <option>05</option>
+                <option>06</option>
+                <option>07</option>
+                <option>08</option>
+                <option>09</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                </select>    
+            </div>
+
+            <div class="form-group
+            <isif condition=" ${!!pdict.shippingForm.payment.expirationyear.mandatory === true}">required</isif>">
+                <label class="form-control-label" for="expirationyear">
+                    <isprint value="${pdict.shippingForm.payment.expirationyear.label}" encoding="htmlcontent" />
+                </label>
+                <select class="form-control" id="expirationyear" <isprint
+                    value=${pdict.shippingForm.payment.expirationyear.attributes} encoding="off" />>
+                    <option>2022</option>
+                    <option>2023</option>
+                    <option>2024</option>
+                    <option>2025</option>
+                    <option>2026</option>
+                    <option>2027</option>
+                    <option>2028</option>
+                    <option>2029</option>
+                </select>
+            </div>
+
+            <div class="form-group
+            <isif condition=" ${!!pdict.shippingForm.payment.securitycode.mandatory === true}">required</isif>">
+                <label class="form-control-label" for="securitycode">
+                    <isprint value="${pdict.shippingForm.payment.securitycode.label}" encoding="htmlcontent" />
+                </label>
+                <input type="text" class="form-control" id="securitycode" <isprint
+                    value=${pdict.shippingForm.payment.securitycode.attributes} encoding="off" />>
+            </div>
+
+
+            <div class="form-group 
+            <isif condition=" ${!!pdict.shippingForm.payment.securitycode.mandatory === true}">required</isif>">
+                <label class=" form-control-label" for="email">
+                    <isprint value="${pdict.shippingForm.payment.email.label}" encoding="htmlcontent" />
+                </label>
+                <input type="email" class="form-control" id="email" <isprint
+                    value=${pdict.shippingForm.payment.email.attributes} encoding="off" />>
+            </div>
+
+            <div class="form-group">
+            <input type = "checkbox" id = "checksavecard" name = "savecard" class = "form-control" <isprint
+                    value=${pdict.shippingForm.payment.checksavecard.attributes} encoding="off"  />>
+            <label class="form-control-label" for = "checksavecard"> 
+            <isprint value="${pdict.shippingForm.payment.checksavecard.label}" encoding="htmlcontent" /> 
             </label>
-            <input type="text" class="form-control" id="cardnumber" <isprint
-                value=${pdict.shippingForm.payment.cardnumber.attributes} encoding="off" />>
-        </div>
+                
+            </div>
+  
 
-        <div class="form-group
-        <isif condition=" ${!!pdict.shippingForm.payment.expirationmonth.mandatory === true}">required</isif>">
-            <label class="form-control-label" for="expirationmonth">
-                <isprint value="${pdict.shippingForm.payment.expirationmonth.label}" encoding="htmlcontent" />
-            </label>
-            <input type="text" class="form-control" id="expirationmonth" <isprint
-                value=${pdict.shippingForm.payment.expirationmonth.attributes} encoding="off" />>
-        </div>
-
-        <div class="form-group
-        <isif condition=" ${!!pdict.shippingForm.payment.expirationyear.mandatory === true}">required</isif>">
-            <label class="form-control-label" for="expirationyear">
-                <isprint value="${pdict.shippingForm.payment.expirationyear.label}" encoding="htmlcontent" />
-            </label>
-            <input type="text" class="form-control" id="expirationyear" <isprint
-                value=${pdict.shippingForm.payment.expirationyear.attributes} encoding="off" />>
-        </div>
-
-        <div class="form-group
-        <isif condition=" ${!!pdict.shippingForm.payment.securitycode.mandatory === true}">required</isif>">
-            <label class="form-control-label" for="securitycode">
-                <isprint value="${pdict.shippingForm.payment.securitycode.label}" encoding="htmlcontent" />
-            </label>
-            <input type="text" class="form-control" id="securitycode" <isprint
-                value=${pdict.shippingForm.payment.securitycode.attributes} encoding="off" />>
-        </div>
-
-
-        <div class="form-group 
-        <isif condition=" ${!!pdict.shippingForm.payment.securitycode.mandatory === true}">required</isif>">
-            <label class=" form-control-label" for="email">
-                <isprint value="${pdict.shippingForm.payment.email.label}" encoding="htmlcontent" />
-            </label>
-            <input type="text" class="form-control" id="email" <isprint
-                value=${pdict.shippingForm.payment.email.attributes} encoding="off" />>
-        </div>
-
-        
+        </fieldset>
 
 
         <input type="hidden" name="${pdict.csrf.tokenName}" value="${pdict.csrf.token}" />

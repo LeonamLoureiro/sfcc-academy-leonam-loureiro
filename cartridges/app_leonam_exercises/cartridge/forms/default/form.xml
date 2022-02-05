@@ -143,6 +143,12 @@
 			value-error="ValueErrorText"
 			type="string"/> 
 
+		<field 
+			formid="checksavecard" 
+			label="label.input.checksavecard" 
+			type="boolean" />	
+
+
 	</group>
 
 </form>
