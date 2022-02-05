@@ -263,7 +263,7 @@
                 <textarea class="form-control" id="comments" <isprint
                     value=${pdict.shippingForm.shipping.comments.attributes} encoding="off"/>></textarea>
                 <span class="countcharacters">
-                ${Resource.msgf('label.form.characters.remaining150', 'forms', null, charactersRemaining)}</span>
+                ${Resource.msgf('label.form.characters.remaining150', 'forms', null, pdict.shippingForm.shipping.comments.length)}</span>
             </div>
         </fieldset>
 <h1 class="form-title-division">
@@ -338,8 +338,8 @@
                     value=${pdict.shippingForm.payment.email.attributes} encoding="off" />>
             </div>
 
-            <div class="form-group">
-            <input type = "checkbox" id = "checksavecard" name = "savecard" class = "form-control" <isprint
+            <div class="form-group checkbox-item">
+            <input type = "checkbox" id = "checksavecard" name = "savecard" class = "form-control" checked <isprint
                     value=${pdict.shippingForm.payment.checksavecard.attributes} encoding="off"  />>
             <label class="form-control-label" for = "checksavecard"> 
             <isprint value="${pdict.shippingForm.payment.checksavecard.label}" encoding="htmlcontent" /> 
@@ -352,9 +352,13 @@
 
 
         <input type="hidden" name="${pdict.csrf.tokenName}" value="${pdict.csrf.token}" />
-
+        <div class="bottom-of-form">
         <button type="submit" class="btn btn-block btn-primary">
-            ${Resource.msg('label.button.save', 'forms', null)}
+            ${Resource.msg('label.button.save', 'forms', null)}          
         </button>
+        <isinclude template="/components/modules" sf-toolkit="off" />
+        <iscontentasset aid="academy-exercise-5"/>
+        </div>
+
     </form>
 </isdecorate>

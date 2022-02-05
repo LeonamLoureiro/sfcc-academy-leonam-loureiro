@@ -1,0 +1,6 @@
+<isdecorate template="common/layout/page">
+<h1>
+       ${Resource.msg('label.complete.form', 'forms', null)} 
+</h1>
+   
+</isdecorate>

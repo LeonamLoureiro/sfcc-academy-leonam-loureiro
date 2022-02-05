@@ -29,6 +29,24 @@
   margin: 0 auto;
 }
 
+#checksavecard {
+  height: 1rem;
+  margin-top: 0.2rem;
+}
+
+.checkbox-item {
+  display: grid;
+  grid-template-columns: 10% 85%;
+  grid-column-gap: 5%;
+}
+
+.bottom-of-form {
+  max-width: 90%;
+  margin: 0 1rem;
+  display: grid;
+  grid-template-columns: 95% 5%;
+}
+
 .account-image {
   background-image: url(../../images/account.jpg);
   background-position-y: 40%;

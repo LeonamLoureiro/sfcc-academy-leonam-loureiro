@@ -15,6 +15,7 @@ server.get(
         var URLUtils = require('dw/web/URLUtils');
 
         var shippingForm = server.forms.getForm('form');
+        
         shippingForm.clear();
             res.render('buyerFormRender', {
             title: Resource.msg("label.form.title.shipping", "forms", null),
@@ -31,13 +32,8 @@ server.post(
    consentTracking.consent,
    csrfProtection.generateToken,
    function(req, res, next) {
-       var Resource = require("dw/web/Resource");
-       var URLUtils = require("dw/web/URLUtils");
-       var trainingForm = server.forms.getForm("fortraining");
-       res.render("templates/formresponses", {
-           title: Resource.msg("training.form.title.responses", "forms", null),
-           trainingForm: trainingForm,
-           actionUrl: URLUtils.url("buyerForm-SubmitInformation").toString()
+           res.render("formcomplete", {
+         
        });
 
        next();
