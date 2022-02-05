@@ -12,6 +12,7 @@ $(document).ready(function () {
     processInclude(require('./components/clientSideValidation'));
     processInclude(require('./components/countrySelector'));
     processInclude(require('./components/toolTip'));
+    processInclude(require('./components/countCharacters'));
 });
 
 require('./thirdParty/bootstrap');

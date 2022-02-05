@@ -262,7 +262,8 @@
                 </label>
                 <textarea class="form-control" id="comments" <isprint
                     value=${pdict.shippingForm.shipping.comments.attributes} encoding="off"/>></textarea>
-                ${Resource.msgf('label.form.characters.remaining150', 'forms', null, charactersRemaining)}
+                <span class="countcharacters">
+                ${Resource.msgf('label.form.characters.remaining150', 'forms', null, charactersRemaining)}</span>
             </div>
         </fieldset>
 <h1 class="form-title-division">

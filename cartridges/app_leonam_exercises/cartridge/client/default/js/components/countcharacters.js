@@ -5,5 +5,5 @@ $(document).on("keydown", "#comments", function () {
     var charactersTyped = parseInt($(this).val().length);
     var charactersRemaining = charactersRemaining - charactersTyped;
 
-    $("#comments").text(charactersRemaining);
+    $(".countcharacters").text(charactersRemaining);
 });
