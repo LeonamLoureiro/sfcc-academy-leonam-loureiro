@@ -1,0 +1,8 @@
+<isdecorate template="common/layout/page">
+    <isscript>
+        $('.single-item').slick();
+
+    </isscript>
+
+    
+</isdecorate>
