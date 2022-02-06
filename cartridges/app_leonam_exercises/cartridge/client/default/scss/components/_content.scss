@@ -1,7 +1,8 @@
-.content-asset-h1 {
+.content-wrapper {
     
-    text-align: center;
-    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 4%;
    }
 
 
