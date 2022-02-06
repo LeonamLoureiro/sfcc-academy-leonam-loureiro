@@ -1,0 +1,9 @@
+.content-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+   }
+
+
+.content-asset-subdiv{
+    width: 25%;
+}

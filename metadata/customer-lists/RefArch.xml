@@ -118,6 +118,58 @@
         <note/>
     </customer>
 
+    <customer customer-no="D00000003">
+        <credentials>
+            <login>testuser3@demandware.com</login>
+            <password encrypted="true" encryptionScheme="scrypt">$s0$b0401$qmOLrCtInR0ADEeC0mJejQ==$VAxXCsxvrUZ/Ma7VDcg+yWgStINMEKn2PNE71TPk1t0=</password>
+            <enabled-flag>true</enabled-flag>
+            <password-question/>
+            <password-answer/>
+        </credentials>
+        <profile>
+            <salutation/>
+            <title/>
+            <first-name>Test3</first-name>
+            <second-name/>
+            <last-name>User3</last-name>
+            <suffix/>
+            <company-name/>
+            <job-title/>
+            <email>testuser3@demandware.com</email>
+            <phone-home/>
+            <phone-business/>
+            <phone-mobile/>
+            <fax/>
+            <gender>2</gender>
+            <creation-date>2015-05-18T19:21:31.000Z</creation-date>
+            <last-login-time>2015-05-18T20:49:51.000Z</last-login-time>
+            <last-visit-time>2015-05-18T20:49:51.000Z</last-visit-time>
+            <preferred-locale>en</preferred-locale>
+        </profile>
+        <addresses>
+            <address address-id="Mom's" preferred="true">
+                <salutation/>
+                <title/>
+                <first-name>Test3</first-name>
+                <second-name/>
+                <last-name>User3</last-name>
+                <suffix/>
+                <company-name/>
+                <job-title/>
+                <address1>3486 Mission St</address1>
+                <address2/>
+                <suite/>
+                <postbox/>
+                <city>San Francisco</city>
+                <postal-code>94110</postal-code>
+                <state-code>CA</state-code>
+                <country-code>US</country-code>
+                <phone>415-555-1212</phone>
+            </address>
+        </addresses>
+        <note/>
+    </customer>
+
     <customer customer-no="W00000010">
         <credentials>
             <login>wluser10@demandware.com</login>
@@ -238,6 +290,36 @@
         <note/>
     </customer>
 
+    <customer customer-no="W00000004">
+        <credentials>
+            <login>wluser4@demandware.com</login>
+            <password encrypted="true" encryptionScheme="scrypt">$s0$b0401$fCWWvDe33TDOjqU98eVFeA==$X4a0XM/ZsrSNcFqJx0UAw+HrA80t+q6+vuwWOHLwyi0=</password>
+            <enabled-flag>true</enabled-flag>
+            <password-question/>
+            <password-answer/>
+        </credentials>
+        <profile>
+            <salutation/>
+            <title/>
+            <first-name>WLUser4</first-name>
+            <second-name/>
+            <last-name>WLuser</last-name>
+            <suffix/>
+            <company-name/>
+            <job-title/>
+            <email>wluser4@demandware.com</email>
+            <phone-home>9009009000</phone-home>
+            <phone-business/>
+            <phone-mobile/>
+            <fax/>
+            <creation-date>2018-07-16T12:40:07.000Z</creation-date>
+            <last-login-time>2018-07-16T12:40:07.000Z</last-login-time>
+            <last-visit-time>2018-07-16T12:40:07.000Z</last-visit-time>
+            <preferred-locale/>
+        </profile>
+        <note/>
+    </customer>
+
     <customer customer-no="W00000005">
         <credentials>
             <login>wluser5@demandware.com</login>
@@ -328,36 +410,6 @@
         <note/>
     </customer>
 
-    <customer customer-no="W00000009">
-        <credentials>
-            <login>wluser9@demandware.com</login>
-            <password encrypted="true" encryptionScheme="scrypt">$s0$b0401$rvu/18rJfLaPIoU760nGrA==$AxXOcPIjdnAMNQ46kGxIJFKheG2iepaA8H5uSZdoPWM=</password>
-            <enabled-flag>true</enabled-flag>
-            <password-question/>
-            <password-answer/>
-        </credentials>
-        <profile>
-            <salutation/>
-            <title/>
-            <first-name>WLUser9</first-name>
-            <second-name/>
-            <last-name>WLuser</last-name>
-            <suffix/>
-            <company-name/>
-            <job-title/>
-            <email>wluser9@demandware.com</email>
-            <phone-home>9009009000</phone-home>
-            <phone-business/>
-            <phone-mobile/>
-            <fax/>
-            <creation-date>2018-07-16T12:46:46.000Z</creation-date>
-            <last-login-time>2018-07-16T12:46:46.000Z</last-login-time>
-            <last-visit-time>2018-07-16T12:46:46.000Z</last-visit-time>
-            <preferred-locale/>
-        </profile>
-        <note/>
-    </customer>
-
     <customer customer-no="W00000008">
         <credentials>
             <login>wluser8@demandware.com</login>
@@ -388,10 +440,10 @@
         <note/>
     </customer>
 
-    <customer customer-no="D00000003">
+    <customer customer-no="W00000009">
         <credentials>
-            <login>testuser3@demandware.com</login>
-            <password encrypted="true" encryptionScheme="scrypt">$s0$b0401$qmOLrCtInR0ADEeC0mJejQ==$VAxXCsxvrUZ/Ma7VDcg+yWgStINMEKn2PNE71TPk1t0=</password>
+            <login>wluser9@demandware.com</login>
+            <password encrypted="true" encryptionScheme="scrypt">$s0$b0401$rvu/18rJfLaPIoU760nGrA==$AxXOcPIjdnAMNQ46kGxIJFKheG2iepaA8H5uSZdoPWM=</password>
             <enabled-flag>true</enabled-flag>
             <password-question/>
             <password-answer/>
@@ -399,72 +451,20 @@
         <profile>
             <salutation/>
             <title/>
-            <first-name>Test3</first-name>
-            <second-name/>
-            <last-name>User3</last-name>
-            <suffix/>
-            <company-name/>
-            <job-title/>
-            <email>testuser3@demandware.com</email>
-            <phone-home/>
-            <phone-business/>
-            <phone-mobile/>
-            <fax/>
-            <gender>2</gender>
-            <creation-date>2015-05-18T19:21:31.000Z</creation-date>
-            <last-login-time>2015-05-18T20:49:51.000Z</last-login-time>
-            <last-visit-time>2015-05-18T20:49:51.000Z</last-visit-time>
-            <preferred-locale>en</preferred-locale>
-        </profile>
-        <addresses>
-            <address address-id="Mom's" preferred="true">
-                <salutation/>
-                <title/>
-                <first-name>Test3</first-name>
-                <second-name/>
-                <last-name>User3</last-name>
-                <suffix/>
-                <company-name/>
-                <job-title/>
-                <address1>3486 Mission St</address1>
-                <address2/>
-                <suite/>
-                <postbox/>
-                <city>San Francisco</city>
-                <postal-code>94110</postal-code>
-                <state-code>CA</state-code>
-                <country-code>US</country-code>
-                <phone>415-555-1212</phone>
-            </address>
-        </addresses>
-        <note/>
-    </customer>
-
-    <customer customer-no="W00000004">
-        <credentials>
-            <login>wluser4@demandware.com</login>
-            <password encrypted="true" encryptionScheme="scrypt">$s0$b0401$fCWWvDe33TDOjqU98eVFeA==$X4a0XM/ZsrSNcFqJx0UAw+HrA80t+q6+vuwWOHLwyi0=</password>
-            <enabled-flag>true</enabled-flag>
-            <password-question/>
-            <password-answer/>
-        </credentials>
-        <profile>
-            <salutation/>
-            <title/>
-            <first-name>WLUser4</first-name>
+            <first-name>WLUser9</first-name>
             <second-name/>
             <last-name>WLuser</last-name>
             <suffix/>
             <company-name/>
             <job-title/>
-            <email>wluser4@demandware.com</email>
+            <email>wluser9@demandware.com</email>
             <phone-home>9009009000</phone-home>
             <phone-business/>
             <phone-mobile/>
             <fax/>
-            <creation-date>2018-07-16T12:40:07.000Z</creation-date>
-            <last-login-time>2018-07-16T12:40:07.000Z</last-login-time>
-            <last-visit-time>2018-07-16T12:40:07.000Z</last-visit-time>
+            <creation-date>2018-07-16T12:46:46.000Z</creation-date>
+            <last-login-time>2018-07-16T12:46:46.000Z</last-login-time>
+            <last-visit-time>2018-07-16T12:46:46.000Z</last-visit-time>
             <preferred-locale/>
         </profile>
         <note/>
