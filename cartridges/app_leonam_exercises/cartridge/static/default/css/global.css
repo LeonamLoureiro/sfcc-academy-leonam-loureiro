@@ -18191,6 +18191,7 @@ div.availability {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-column-gap: 4%;
+  margin: 1rem;
 }
 
 /*# sourceMappingURL=global.css.map*/
