@@ -15,7 +15,7 @@ server.get(
         var URLUtils = require('dw/web/URLUtils');
 
         var shippingForm = server.forms.getForm('form');
-        
+               
         shippingForm.clear();
             res.render('buyerFormRender', {
             title: Resource.msg("label.form.title.shipping", "forms", null),

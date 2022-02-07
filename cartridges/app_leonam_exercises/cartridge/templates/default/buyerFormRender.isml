@@ -1,4 +1,8 @@
 <isdecorate template="common/layout/page">
+ <isscript>
+        var assets = require('*/cartridge/scripts/assets.js');
+        assets.addJs('/js/productTile.js');
+ </isscript>
 <h1 class=form-title-division>
         <isprint value="${pdict.title}" encoding="htmlcontent" />
 </h1>
@@ -260,10 +264,11 @@
                 <label class="form-control-label" for="comments">
                     <isprint value="${pdict.shippingForm.shipping.comments.label}" encoding="htmlcontent" />
                 </label>
-                <textarea class="form-control" id="comments" <isprint
-                    value=${pdict.shippingForm.shipping.comments.attributes} encoding="off"/>></textarea>
-                <span class="countcharacters">
-                ${Resource.msgf('label.form.characters.remaining150', 'forms', null, pdict.shippingForm.shipping.comments.length)}</span>
+                  
+                <textarea class="form-control textarea-count" id="comments" maxlength="150"></textarea>
+                <div id="countcharacters">
+                       <iscomment> ${Resource.msgf('label.form.characters.remaining150', 'forms', null, pdict.countTextArea)} </iscomment>
+                </div>
             </div>
         </fieldset>
 <h1 class="form-title-division">
