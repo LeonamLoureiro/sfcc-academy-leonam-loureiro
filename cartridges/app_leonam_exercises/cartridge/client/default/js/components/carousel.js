@@ -1,14 +1,17 @@
 'use strict';
 
 $(document).ready(function(){
+  require('../../js/components/slick/slick/slick');
   $('.single-item').slick({
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
+    settings: {
+      Infinity: true,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    }
   });
 });
 
-$('.single-item').slick();
+/* $('.single-item').slick();
 $('.responsive').slick({
     dots: true,
     infinite: false,
@@ -44,3 +47,4 @@ $('.responsive').slick({
       // instead of a settings object
     ]
   });
+ */
