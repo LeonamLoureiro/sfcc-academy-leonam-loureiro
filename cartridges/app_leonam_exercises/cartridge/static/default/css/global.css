@@ -18188,18 +18188,11 @@ div.availability {
 }
 
 .single-item {
-  margin: 0 auto 0;
+  margin: 3rem auto 0;
 }
 
-.wall {
-  display: none;
-  width: 100%;
-  height: 100%;
-}
-
-.wall:target {
-  display: grid;
-  grid-template-columns: 5% 1fr 5%;
+.carousel-element {
+  margin-top: 1rem;
 }
 
 /*# sourceMappingURL=global.css.map*/

@@ -1,56 +1,37 @@
 <isdecorate template="common/layout/page">
     <isinclude template="/components/modules" sf-toolkit="off" />
 
-
-
+    
 
     <div class="single-item">
-        <div class="wall wall-1" id="wall-1">
-           <a href="#wall-7" class="arrow"><iscontentasset aid="academy-exercise-7-left-arrow"/></a>
+        <div class="carousel-element">
             <iscontentasset aid="academy-exercise-7-goofy"/>
-            <a href="#wall-2" class="arrow"><iscontentasset aid="academy-exercise-7-right-arrow"/></a>
         </div>
         
-        <div class="wall wall-2" id="wall-2">   
-            <a href="#wall-1" class="arrow"><iscontentasset aid="academy-exercise-7-left-arrow"/></a>
+        <div class="carousel-element">   
             <iscontentasset aid="academy-exercise-7-lamp"/>
-            <a href="#wall-3" class="arrow"><iscontentasset aid="academy-exercise-7-right-arrow"/></a>
         </div>
         
-        <div class="wall wall-3" id="wall-3">
-            <a href="#wall-2" class="arrow"><iscontentasset aid="academy-exercise-7-left-arrow"/></a>
+        <div class="carousel-element">
             <iscontentasset aid="academy-exercise-7-double-face"/>
-            <a href="#wall-4" class="arrow"><iscontentasset aid="academy-exercise-7-right-arrow"/></a>
-         
         </div>
 
-       <div class="wall wall-4" id="wall-4">
-            <a href="#wall-3" class="arrow"><iscontentasset aid="academy-exercise-7-left-arrow"/></a>
+        <div class="carousel-element">
             <iscontentasset aid="academy-exercise-7-nrl"/>
-            <a href="#wall-5" class="arrow"><iscontentasset aid="academy-exercise-7-right-arrow"/></a>
-         
         </div>
 
-        <div class="wall wall-5" id="wall-5">
-            <a href="#wall-4" class="arrow"><iscontentasset aid="academy-exercise-7-left-arrow"/></a>
+        <div class="carousel-element">
             <iscontentasset aid="academy-exercise-7-eagle"/>
-            <a href="#wall-6" class="arrow"><iscontentasset aid="academy-exercise-7-right-arrow"/></a>
-         
         </div>
 
-        <div class="wall wall-6" id="wall-6">
-            <a href="#wall-5" class="arrow"><iscontentasset aid="academy-exercise-7-left-arrow"/></a>
+        <div class="carousel-element">
             <iscontentasset aid="academy-exercise-7-coin"/>
-            <a href="#wall-7" class="arrow"><iscontentasset aid="academy-exercise-7-right-arrow"/></a>
-         
         </div>
 
-        <div class="wall wall-7" id="wall-7">
-            <a href="#wall-6" class="arrow"><iscontentasset aid="academy-exercise-7-left-arrow"/></a>
-             <iscontentasset aid="academy-exercise-7-homer"/>
-            <a href="#wall-1" class="arrow"><iscontentasset aid="academy-exercise-7-right-arrow"/></a>
-         
+        <div class="carousel-element">
+            <iscontentasset aid="academy-exercise-7-homer"/>
         </div>
+
     </div>
 
 </isdecorate>

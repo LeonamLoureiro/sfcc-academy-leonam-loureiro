@@ -1,6 +1,12 @@
 'use strict';
 
-window.location = "#wall-1";
+$(document).ready(function(){
+  $('.single-item').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  });
+});
 
 $('.single-item').slick();
 $('.responsive').slick({
