@@ -18189,6 +18189,8 @@ div.availability {
 
 .single-item {
   margin: 3rem auto 0;
+  display: grid;
+  grid-template-columns: 5% 1fr 5%;
 }
 
 .carousel-element {
@@ -18202,7 +18204,7 @@ img {
 /* Slider */
 .slick-slider {
   position: relative;
-  display: block;
+  display: grid;
   box-sizing: border-box;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -18303,6 +18305,11 @@ img {
 
 .slick-arrow.slick-hidden {
   display: none;
+}
+
+.slick-arrow {
+  border: none;
+  background-color: transparent;
 }
 
 /*# sourceMappingURL=global.css.map*/
