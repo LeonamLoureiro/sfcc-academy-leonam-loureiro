@@ -1,63 +1,54 @@
 <isdecorate template="common/layout/page">
-    <isscript>
-       
+    <isinclude template="/components/modules" sf-toolkit="off" />
 
-    </isscript>
 
 
 
     <div class="single-item">
         <div class="wall wall-1" id="wall-1">
-           <a href="#wall-7"><img src="https://cdn.icon-icons.com/icons2/936/PNG/512/angle-pointing-to-left_icon-icons.com_73681.png" alt="back"/></a>
-            <h1><img src="https://cdn.thetealmango.com/wp-content/uploads/2021/10/Goofy-one.jpg" alt="Goofy" 
-                width="300px" height="300px" class="single-item"/></h1>
-            <a href="#wall-2"><img src="https://cdn.icon-icons.com/icons2/934/PNG/512/arrow-angle-pointing-to-right_icon-icons.com_73097.png" alt="forward"/></a>
+           <a href="#wall-7" class="arrow"><iscontentasset aid="academy-exercise-7-left-arrow"/></a>
+            <iscontentasset aid="academy-exercise-7-goofy"/>
+            <a href="#wall-2" class="arrow"><iscontentasset aid="academy-exercise-7-right-arrow"/></a>
         </div>
         
         <div class="wall wall-2" id="wall-2">   
-            <a href="#wall-1"><img src="https://cdn.icon-icons.com/icons2/936/PNG/512/angle-pointing-to-left_icon-icons.com_73681.png" alt="back"/></a>
-            <h1><img src="https://cdn.thetealmango.com/wp-content/uploads/2021/10/Goofy-one.jpg" alt="Goofy" 
-            width="300px" height="300px" class="single-item"/></h1>
-            <a href="#wall-3"><img src="https://cdn.icon-icons.com/icons2/934/PNG/512/arrow-angle-pointing-to-right_icon-icons.com_73097.png" alt="forward"/></a>
+            <a href="#wall-1" class="arrow"><iscontentasset aid="academy-exercise-7-left-arrow"/></a>
+            <iscontentasset aid="academy-exercise-7-lamp"/>
+            <a href="#wall-3" class="arrow"><iscontentasset aid="academy-exercise-7-right-arrow"/></a>
         </div>
         
         <div class="wall wall-3" id="wall-3">
-            <a href="#wall-2"><img src="https://cdn.icon-icons.com/icons2/936/PNG/512/angle-pointing-to-left_icon-icons.com_73681.png" alt="back"/></a>
-            <h1><img src="https://cdn.thetealmango.com/wp-content/uploads/2021/10/Goofy-one.jpg" alt="Goofy" 
-            width="300px" height="300px" class="single-item"/></h1>
-            <a href="#wall-4"><img src="https://cdn.icon-icons.com/icons2/934/PNG/512/arrow-angle-pointing-to-right_icon-icons.com_73097.png" alt="forward"/></a>
+            <a href="#wall-2" class="arrow"><iscontentasset aid="academy-exercise-7-left-arrow"/></a>
+            <iscontentasset aid="academy-exercise-7-double-face"/>
+            <a href="#wall-4" class="arrow"><iscontentasset aid="academy-exercise-7-right-arrow"/></a>
          
         </div>
 
        <div class="wall wall-4" id="wall-4">
-            <a href="#wall-3"><img src="https://cdn.icon-icons.com/icons2/936/PNG/512/angle-pointing-to-left_icon-icons.com_73681.png" alt="back"/></a>
-            <h1><img src="https://cdn.thetealmango.com/wp-content/uploads/2021/10/Goofy-one.jpg" alt="Goofy" 
-            width="300px" height="300px" class="single-item"/></h1>
-            <a href="#wall-5"><img src="https://cdn.icon-icons.com/icons2/934/PNG/512/arrow-angle-pointing-to-right_icon-icons.com_73097.png" alt="forward"/></a>
+            <a href="#wall-3" class="arrow"><iscontentasset aid="academy-exercise-7-left-arrow"/></a>
+            <iscontentasset aid="academy-exercise-7-nrl"/>
+            <a href="#wall-5" class="arrow"><iscontentasset aid="academy-exercise-7-right-arrow"/></a>
          
         </div>
 
         <div class="wall wall-5" id="wall-5">
-            <a href="#wall-4"><img src="https://cdn.icon-icons.com/icons2/936/PNG/512/angle-pointing-to-left_icon-icons.com_73681.png" alt="back"/></a>
-            <h1><img src="https://cdn.thetealmango.com/wp-content/uploads/2021/10/Goofy-one.jpg" alt="Goofy" 
-            width="300px" height="300px" class="single-item"/></h1>
-            <a href="#wall-6"><img src="https://cdn.icon-icons.com/icons2/934/PNG/512/arrow-angle-pointing-to-right_icon-icons.com_73097.png" alt="forward"/></a>
+            <a href="#wall-4" class="arrow"><iscontentasset aid="academy-exercise-7-left-arrow"/></a>
+            <iscontentasset aid="academy-exercise-7-eagle"/>
+            <a href="#wall-6" class="arrow"><iscontentasset aid="academy-exercise-7-right-arrow"/></a>
          
         </div>
 
         <div class="wall wall-6" id="wall-6">
-            <a href="#wall-5"><img src="https://cdn.icon-icons.com/icons2/936/PNG/512/angle-pointing-to-left_icon-icons.com_73681.png" alt="back"/></a>
-            <h1><img src="https://cdn.thetealmango.com/wp-content/uploads/2021/10/Goofy-one.jpg" alt="Goofy" 
-            width="300px" height="300px" class="single-item"/></h1>
-            <a href="#wall-7"><img src="https://cdn.icon-icons.com/icons2/934/PNG/512/arrow-angle-pointing-to-right_icon-icons.com_73097.png" alt="forward"/></a>
+            <a href="#wall-5" class="arrow"><iscontentasset aid="academy-exercise-7-left-arrow"/></a>
+            <iscontentasset aid="academy-exercise-7-coin"/>
+            <a href="#wall-7" class="arrow"><iscontentasset aid="academy-exercise-7-right-arrow"/></a>
          
         </div>
 
         <div class="wall wall-7" id="wall-7">
-            <a href="#wall-6"><img src="https://cdn.icon-icons.com/icons2/936/PNG/512/angle-pointing-to-left_icon-icons.com_73681.png" alt="back"/></a>
-            <h1><img src="https://cdn.thetealmango.com/wp-content/uploads/2021/10/Goofy-one.jpg" alt="Goofy" 
-            width="300px" height="300px" class="single-item"/></h1>
-            <a href="#wall-1"><img src="https://cdn.icon-icons.com/icons2/934/PNG/512/arrow-angle-pointing-to-right_icon-icons.com_73097.png" alt="forward"/></a>
+            <a href="#wall-6" class="arrow"><iscontentasset aid="academy-exercise-7-left-arrow"/></a>
+             <iscontentasset aid="academy-exercise-7-homer"/>
+            <a href="#wall-1" class="arrow"><iscontentasset aid="academy-exercise-7-right-arrow"/></a>
          
         </div>
     </div>

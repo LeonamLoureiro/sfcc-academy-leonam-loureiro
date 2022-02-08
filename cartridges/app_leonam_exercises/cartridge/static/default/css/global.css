@@ -18188,8 +18188,6 @@ div.availability {
 }
 
 .single-item {
-  width: 250px;
-  height: 250px;
   margin: 0 auto 0;
 }
 
@@ -18200,7 +18198,8 @@ div.availability {
 }
 
 .wall:target {
-  display: block;
+  display: grid;
+  grid-template-columns: 5% 1fr 5%;
 }
 
 /*# sourceMappingURL=global.css.map*/
