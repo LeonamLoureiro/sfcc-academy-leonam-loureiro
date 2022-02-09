@@ -4,31 +4,31 @@
     
 
     <div class="single-item">
-        <div class="carousel-element">
-            <iscontentasset aid="academy-exercise-7-goofy"/>
+        <div class="carousel-element" id="goofy">
+           <iscontentasset aid="academy-exercise-7-goofy"/>
         </div>
         
-        <div class="carousel-element">   
+        <div class="carousel-element" id="lamp">   
             <iscontentasset aid="academy-exercise-7-lamp"/>
         </div>
         
-        <div class="carousel-element">
+        <div class="carousel-element" id="double-face">
             <iscontentasset aid="academy-exercise-7-double-face"/>
         </div>
 
-        <div class="carousel-element">
+        <div class="carousel-element" id="nrl">
             <iscontentasset aid="academy-exercise-7-nrl"/>
         </div>
 
-        <div class="carousel-element">
+        <div class="carousel-element" id="eagle">
             <iscontentasset aid="academy-exercise-7-eagle"/>
         </div>
 
-        <div class="carousel-element">
+        <div class="carousel-element" id="coin">
             <iscontentasset aid="academy-exercise-7-coin"/>
         </div>
 
-        <div class="carousel-element">
+        <div class="carousel-element" id="homer">
             <iscontentasset aid="academy-exercise-7-homer"/>
         </div>
 
@@ -36,31 +36,31 @@
  
         
         <div class="responsive">
-            <div class="carousel-element-2">
+            <div class="carousel-element-2" id="goofy">
                 <iscontentasset aid="academy-exercise-7-goofy"/>
             </div>
                         
-        <div class="carousel-element-2">   
+        <div class="carousel-element-2" id="lamp">   
                 <iscontentasset aid="academy-exercise-7-lamp"/>
         </div>
                         
-        <div class="carousel-element-2">
+        <div class="carousel-element-2" id="double-face">
                 <iscontentasset aid="academy-exercise-7-double-face"/>
         </div>
 
-        <div class="carousel-element-2">
+        <div class="carousel-element-2" id="nrl">
                 <iscontentasset aid="academy-exercise-7-nrl"/>
         </div>
 
-        <div class="carousel-element-2">
+        <div class="carousel-element-2" id="eagle">
                 <iscontentasset aid="academy-exercise-7-eagle"/>
         </div>
 
-        <div class="carousel-element-2">
+        <div class="carousel-element-2" id="coin">
                 <iscontentasset aid="academy-exercise-7-coin"/>
         </div>
 
-        <div class="carousel-element-2">
+        <div class="carousel-element-2" id="homer">
                 <iscontentasset aid="academy-exercise-7-homer"/>
         </div>
 
