@@ -32,6 +32,41 @@
             <iscontentasset aid="academy-exercise-7-homer"/>
         </div>
 
+        </div>
+ 
+        
+        <div class="responsive">
+            <div class="carousel-element-2">
+                <iscontentasset aid="academy-exercise-7-goofy"/>
+            </div>
+                        
+        <div class="carousel-element-2">   
+                <iscontentasset aid="academy-exercise-7-lamp"/>
+        </div>
+                        
+        <div class="carousel-element-2">
+                <iscontentasset aid="academy-exercise-7-double-face"/>
+        </div>
+
+        <div class="carousel-element-2">
+                <iscontentasset aid="academy-exercise-7-nrl"/>
+        </div>
+
+        <div class="carousel-element-2">
+                <iscontentasset aid="academy-exercise-7-eagle"/>
+        </div>
+
+        <div class="carousel-element-2">
+                <iscontentasset aid="academy-exercise-7-coin"/>
+        </div>
+
+        <div class="carousel-element-2">
+                <iscontentasset aid="academy-exercise-7-homer"/>
+        </div>
+
     </div>
+
+    
+
 
 </isdecorate>

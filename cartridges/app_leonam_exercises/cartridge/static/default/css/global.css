@@ -18312,4 +18312,9 @@ img {
   background-color: transparent;
 }
 
+.responsive {
+  display: grid;
+  grid-template-columns: 5% 1fr 5%;
+}
+
 /*# sourceMappingURL=global.css.map*/
