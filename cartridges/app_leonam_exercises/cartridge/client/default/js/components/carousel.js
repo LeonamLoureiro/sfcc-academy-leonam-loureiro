@@ -7,7 +7,9 @@ $(document).ready(function(){
       Infinity: true,
       slidesToShow: 1,
       slidesToScroll: 1
-    }
+    },
+
+    asNavFor: '.responsive',
   });
 });
 
