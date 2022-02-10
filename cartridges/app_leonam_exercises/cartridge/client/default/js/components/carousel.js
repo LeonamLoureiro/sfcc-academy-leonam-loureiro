@@ -1,4 +1,3 @@
-'use strict';
 
 $(document).ready(function(){
     require('../../js/components/slick/slick/slick');

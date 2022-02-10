@@ -93,9 +93,6 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-
-
 $(document).ready(function () {
   __webpack_require__(/*! ../../js/components/slick/slick/slick */ "./cartridges/app_leonam_exercises/cartridge/client/default/js/components/slick/slick/slick.js");
 

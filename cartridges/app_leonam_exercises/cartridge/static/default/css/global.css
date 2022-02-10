@@ -18280,4 +18280,9 @@ div.availability {
   display: none;
 }
 
+.carousel {
+  margin: 3rem auto 0;
+  display: grid;
+}
+
 /*# sourceMappingURL=global.css.map*/
