@@ -18237,7 +18237,7 @@ div.availability {
   left: 0;
   top: 0;
   display: block;
-  margin-left: auto;
+  margin-left: 3rem;
   margin-right: auto;
 }
 .slick-track:before, .slick-track:after {
@@ -18293,6 +18293,14 @@ div.availability {
 .slick-arrow {
   border: none;
   background-color: transparent;
+}
+
+.slick-prev {
+  margin-left: 0.3rem;
+}
+
+.slick-next {
+  margin-right: 3rem;
 }
 
 /*# sourceMappingURL=global.css.map*/

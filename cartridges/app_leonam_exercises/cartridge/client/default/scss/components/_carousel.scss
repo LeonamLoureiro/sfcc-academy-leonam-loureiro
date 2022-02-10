@@ -22,6 +22,7 @@
     display: block;
     margin: 0;
     padding: 0;
+    
 
     &:focus {
         outline: none;
@@ -46,8 +47,9 @@
     left: 0;
     top: 0;
     display: block;
-    margin-left: auto;
+    margin-left: 3rem;
     margin-right: auto;
+    
 
     &:before,
     &:after {
@@ -110,4 +112,14 @@
   .slick-arrow {
     border: none;
     background-color: transparent;
+    
+ }
+
+ 
+ .slick-prev{
+    margin-left: .3rem;
+ }
+
+ .slick-next{
+     margin-right: 3rem;;
  }
