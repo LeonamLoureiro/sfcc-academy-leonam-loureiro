@@ -1,7 +1,11 @@
 <isdecorate template="common/layout/page">
 
-    <div class="carousel">
-        <isslot id="product_carousel" description="…" context="global"/>    
-    </div>
+    
+        <isslot id="product_carousel" description="…" context="global"/>  
+          
+    
+    
+    
+
     
 </isdecorate>

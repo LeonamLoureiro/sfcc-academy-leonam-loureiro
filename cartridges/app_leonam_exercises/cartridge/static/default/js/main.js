@@ -96,7 +96,7 @@
 $(document).ready(function () {
   __webpack_require__(/*! ../../js/components/slick/slick/slick */ "./cartridges/app_leonam_exercises/cartridge/client/default/js/components/slick/slick/slick.js");
 
-  $('.carousel').slick({
+  $('.homepage-product-listing').slick({
     dots: false,
     infinite: true,
     speed: 300,
@@ -171,8 +171,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
         appendDots: $(element),
         arrows: true,
         asNavFor: null,
-        prevArrow: '<button class="slick-prev" aria-label="Previous" type="button">Previous</button>',
-        nextArrow: '<button class="slick-next" aria-label="Next" type="button">Next</button>',
+        prevArrow: '<button class="slick-prev" type="button"><img src="https://cdn-icons-png.flaticon.com/512/271/271220.png" height ="50" width="50" /></button>',
+        nextArrow: '<button class="slick-next" type="button"><img src="https://cdn-icons-png.flaticon.com/512/271/271228.png" height ="50" width="50" /></button>',
         autoplay: false,
         autoplaySpeed: 3000,
         centerMode: false,

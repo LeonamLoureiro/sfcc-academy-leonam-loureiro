@@ -17076,7 +17076,9 @@ div.availability {
 
 .product-tile {
   border: 0;
+  margin-top: 3rem;
   margin-bottom: 0;
+  margin-left: 1rem;
 }
 @media (max-width: 991.98px) {
   .product-tile {
@@ -17095,6 +17097,7 @@ div.availability {
 }
 .product-tile .tile-body {
   padding: 0.625em 0 1.875em;
+  width: 100vw;
 }
 .product-tile .tile-body .color-swatches {
   min-height: 2.25em;
@@ -18190,7 +18193,8 @@ div.availability {
 /* Slider */
 .slick-slider {
   position: relative;
-  display: block;
+  display: grid;
+  grid-template-columns: 5% 1fr 5%;
   box-sizing: border-box;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -18201,6 +18205,7 @@ div.availability {
   -ms-touch-action: pan-y;
   touch-action: pan-y;
   -webkit-tap-highlight-color: transparent;
+  align-items: center;
 }
 
 .slick-list {
@@ -18280,9 +18285,14 @@ div.availability {
   display: none;
 }
 
-.carousel {
-  margin: 3rem auto 0;
-  display: grid;
+.card-body {
+  margin: 3rem auto 3rem;
+  width: 100%;
+}
+
+.slick-arrow {
+  border: none;
+  background-color: transparent;
 }
 
 /*# sourceMappingURL=global.css.map*/

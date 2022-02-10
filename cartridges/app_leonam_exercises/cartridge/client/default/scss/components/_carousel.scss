@@ -2,7 +2,8 @@
 
 .slick-slider {
     position: relative;
-    display: block;
+    display: grid;
+    grid-template-columns: 5% 1fr 5%;
     box-sizing: border-box;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -13,6 +14,7 @@
     -ms-touch-action: pan-y;
     touch-action: pan-y;
     -webkit-tap-highlight-color: transparent;
+    align-items: center;
 }
 .slick-list {
     position: relative;
@@ -100,8 +102,12 @@
 }
 
 
-.carousel{
-    margin: 3rem auto 0;
-    display: grid;
-    
+.card-body{
+    margin: 3rem auto 3rem;
+    width: 100%;
   }
+
+  .slick-arrow {
+    border: none;
+    background-color: transparent;
+ }

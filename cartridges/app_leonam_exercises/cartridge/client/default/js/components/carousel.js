@@ -1,7 +1,9 @@
 
+
+
 $(document).ready(function(){
     require('../../js/components/slick/slick/slick');
-    $('.carousel').slick({
+    $('.homepage-product-listing').slick({
       dots: false,
       infinite: true,
       speed: 300,
