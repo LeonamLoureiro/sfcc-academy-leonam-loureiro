@@ -18194,8 +18194,11 @@ div.availability {
   border-radius: 50%;
   font-size: 1rem;
   text-align: center;
-  background: red;
+  background: #ff0000;
   color: #fff;
+  position: absolute;
+  z-index: 2;
+  margin: -2rem;
 }
 
 /*# sourceMappingURL=global.css.map*/
