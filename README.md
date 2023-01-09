@@ -1,2 +1,2 @@
-# osf-sfcc-academy-leonam-loureiro
+# sfcc-academy-leonam-loureiro
 OSF Frontend Academy
