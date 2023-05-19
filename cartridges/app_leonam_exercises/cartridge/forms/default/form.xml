@@ -1,0 +1,154 @@
+<?xml version="1.0"?>
+<form xmlns="http://www.demandware.com/xml/form/2008-04-19" secure="false">
+	<group formid="shipping">
+		<field 
+			formid="firstname" 
+			label="label.input.firstname.profile" 
+			mandatory="true" 
+			max-length="50"
+			missing-error="error.message.required" 
+			range-error="error.message.50orless" 
+			type="string" />
+
+		<field 
+			formid="lastname" 
+			label="label.input.lastname.profile" 
+			mandatory="true" 
+			max-length="50" 
+			missing-error="error.message.required"
+			range-error="error.message.50orless" 
+			type="string" />
+
+	
+		<field 
+			formid="address1" 
+			label="label.input.address1" 
+			mandatory="true" 
+			max-length="80" 
+			missing-error="error.message.required"
+			range-error="error.message.80orless" 
+			type="string" />	
+
+		<field 
+			formid="address2" 
+			label="label.input.address2" 
+			mandatory="false" 
+			max-length="80" 
+			range-error="error.message.80orless" 
+			type="string" />	
+
+
+			
+		
+		<field
+			formid="country" 
+			label="label.input.country" 
+			mandatory="true" 
+			max-length="50" 
+			missing-error="error.message.required"
+			parse-error="error.message.parse.country"
+			range-error="error.message.50orless"
+			value-error="ValueErrorText"
+			type="string"/> 
+
+		<field
+			formid="state" 
+			label="label.input.state" 
+			mandatory="true" 
+			max-length="50" 
+			missing-error="error.message.required"
+			parse-error="error.message.parse.country"
+			range-error="error.message.50orless"
+			value-error="ValueErrorText"
+			type="string"/> 
+
+		<field
+			formid="postalcode" 
+			label="label.input.postalcode" 
+			mandatory="true" 
+			max-length="50" 
+			missing-error="error.message.required"
+			range-error="error.message.50orless"
+			value-error="ValueErrorText"
+			type="integer"/> 
+
+		<field
+			formid="phonenumber" 
+			label="label.input.phonenumber" 
+			mandatory="true" 
+			max-length="20" 
+			missing-error="error.message.required"
+			range-error="error.message.20orless"
+			value-error="ValueErrorText"
+			type="integer"/> 
+
+		<field
+			formid="comments" 
+			label="label.input.comments" 
+			mandatory="false" 
+			max-length="150" 
+			missing-error="error.message.required"
+			range-error="error.message.150orless"
+			value-error="ValueErrorText"
+			type="string"/> 
+
+	</group>
+
+	<group formid="payment">
+		<field 
+			formid="cardnumber" 
+			label="label.input.creditcard.number" 
+			mandatory="true" 
+			max-length="16"
+			missing-error="error.message.required" 
+			range-error="error.message.16" 
+			type="integer" />
+		
+		<field 
+			formid="expirationmonth" 
+			label="label.input.payment.expirationmonth" 
+			mandatory="true" 
+			max-length="16"
+			missing-error="error.message.required" 
+			range-error="error.message.16" 
+			type="integer" />
+
+		<field 
+			formid="expirationyear" 
+			label="label.input.payment.expirationyear" 
+			mandatory="true" 
+			max-length="16"
+			missing-error="error.message.required" 
+			range-error="error.message.16" 
+			type="integer" />
+
+		<field 
+			formid="securitycode" 
+			label="label.input.payment.securitycode" 
+			mandatory="true" 
+			max-length="16"
+			missing-error="error.message.required" 
+			range-error="error.message.16" 
+			type="integer" />	
+
+		<field
+			formid="email" 
+			label="label.input.email.profile" 
+			mandatory="true" 
+			max-length="50" 
+			missing-error="error.message.required"
+			parse-error="error.message.parse.email.profile.form"
+			range-error="error.message.50orless"
+			regexp="^[\w.%+-]+@[\w.-]+\.[\w]{2,6}$" 
+			value-error="ValueErrorText"
+			type="string"/> 
+
+		<field 
+			formid="checksavecard" 
+			label="label.input.checksavecard" 
+			type="boolean" />	
+
+
+	</group>
+
+</form>

@@ -1,0 +1,85 @@
+.form-group.required .form-control-label::before {
+  content: "*";
+  color: #c00;
+}
+
+.form-division-1, .form-division-2 {
+  max-width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 47.5% 47.5%;
+  grid-column-gap: 5%;
+}
+
+.full-width-grid {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.form-title-division {
+  background-color: white;
+  text-align: center;
+  width: 100%;
+  padding: 0.5rem 0.5rem;
+}
+
+.btn-primary {
+  text-align: center;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+#checksavecard {
+  height: 1rem;
+  margin-top: 0.2rem;
+}
+
+.checkbox-item {
+  display: grid;
+  grid-template-columns: 10% 85%;
+  grid-column-gap: 5%;
+}
+
+.bottom-of-form {
+  max-width: 90%;
+  margin: 0 1rem;
+  display: grid;
+  grid-template-columns: 95% 5%;
+}
+
+.contact-us-banner {
+  background-image: url("../images/contact-us.jpg");
+  background-position-y: 20%;
+}
+
+.contact-us-signup-message {
+  transform: translate(-50%, -50%);
+  position: fixed;
+  top: 15%;
+  left: 50%;
+}
+
+.contact-us-signup-alert {
+  animation: fade 5s linear forwards;
+  box-shadow: 1px 1px 5px grey;
+  padding: 1em;
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.contact-us-signup-alert.show {
+  display: block;
+}
+
+/*# sourceMappingURL=contactUs.css.map*/
