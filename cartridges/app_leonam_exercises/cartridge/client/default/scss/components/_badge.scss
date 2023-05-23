@@ -1,0 +1,13 @@
+.badge{
+    display: inline-block;
+    min-width: .5rem; 
+    padding: 2rem 3rem; 
+    border-radius: 50%;
+    font-size: 1rem;
+    text-align: center;
+    background: #ff0000;
+    color: #fff;
+    position: absolute;
+    z-index: 2;
+    margin: -2rem;
+}
